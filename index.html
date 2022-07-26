@@ -686,46 +686,63 @@
                                     <div>
                                         <ul class="list-inline">
                                             <li>
-                                                <strong>1) 해시태그 섹션 </strong>
+                                                <strong>1) 해시태그 섹션 / Hashtag section</strong>
+                                                    
                                             </li>
                                         </ul>
 
                                         <p>인스타그램 graph api를 활용하여 ‘지진' 키워드를 기반으로 한 연관 태그를 수집하여 다음과 같이 두 가지 유형의 차트를 제공합니다.
                                             <br/>
-                                            1.최근<br/>
+                                            We utilize the Instagram graph API to collect relevant tags based on the keyword 'earthquake' to provide two types of charts.
+                                            <br/>
+                                            <br/>
+                                            1.최근 / Recent<br/>
                                             인스타그램 graph api의 해시태그 검색/recent_media 엔드포인트를 활용하여 최근 3일 동안 ‘지진' 키워드를 통해 수집한 태그 갯수를 수합하여 1-10위까지 순위를 매겼습니다.
                                             <br/>
-                                            2.인기<br/>
-                                            인스타그램 graph api의 해시태그 검색/top_media 엔드포인트를 활용하여 ‘지진' 키워드와 관련된 가장 인기 있는 게시글의 태그를 선별하고 수합하여 1-10위까지 순위를 매겼습니다.                                        
+                                            Search for a hashtag in Instagram graph API/ Leverage the recent_media endpoint to aggregate the number of tags collected through the keyword 'earthquake' in the last three days and rank them from 1-10th.
+                                            <br/>
+                                            <br/>
+                                            2.인기 / Public interest<br/>
+                                            인스타그램 graph api의 해시태그 검색/top_media 엔드포인트를 활용하여 ‘지진' 키워드와 관련된 가장 인기 있는 게시글의 태그를 선별하고 수합하여 1-10위까지 순위를 매겼습니다.  
+                                            <br/>
+                                            Search for the hashtag in Instagram graph API/ Leverage the top_media endpoint to single out and aggregate tags from the most popular posts related to the keyword 'earthquake' and rank them from 1-10th.                                      
                                         </p>
                                      </div>
                                      <div>
                                         <ul class="list-inline">
                                             <li>
-                                                <strong>2) 대피소 찾기 섹션 </strong>
+                                                <strong>2) 대피소 찾기 섹션 / Shelter Finding Section </strong>
                                             </li>
                                         </ul>
-                                        <p>행정 안전부에서 제공한 지진 옥외대피장소 정보를 가공하여 json 형태로 데이터베이스화 하였습니다. 스마트폰에 내장된 Geolocation API를 활용해 사용자의 현재 위치 기준 1km, 1.5km, 2km 반경의 대피소 데이터를 DB 파일에서 추출하고 보여줍니다. 대피소 정보는 거리순/리스트 형태로 제공되며 내 위치에서 가까운 순서대로 정렬하여  보여줍니다. 대피소 정보를 터치하면 해당 위치를 클립보드에 복사할 수 있고 이를 지도 어플에서 검색 시 유용하게 사용할 수 있습니다.                                      
-                                        </p>
+                                          <p>행정 안전부에서 제공한 지진 옥외대피장소 정보를 가공하여 json 형태로 데이터베이스화 하였습니다. 스마트폰에 내장된 Geolocation API를 활용해 사용자의 현재 위치 기준 1km, 1.5km, 2km 반경의 대피소 데이터를 DB 파일에서 추출하고 보여줍니다. 대피소 정보는 거리순/리스트 형태로 제공되며 내 위치에서 가까운 순서대로 정렬하여  보여줍니다. 대피소 정보를 터치하면 해당 위치를 클립보드에 복사할 수 있고 이를 지도 어플에서 검색 시 유용하게 사용할 수 있습니다.                                      
+                                          <br/>
+                                         The earthquake outdoor evacuation shelter information provided by the Ministry of Public Administration and Security was processed and converted into a database in JSON format. Using the Geolocation API built-in in the smartphone, it extracts and shows shelter data from the user's current location in a radius of 1km, 1.5km, and 2km from the DB file. Shelter information is provided in order of distance/list format and is displayed in order of proximity to the user's location. If the user touches the shelter information, the user can copy the site to the clipboard, which can help search in the map application.
+                                          </p>
                                     </div>
                                     <div>
                                         <ul class="list-inline">
                                             <li>
-                                                <strong>3) 히스토리 섹션</strong>
+                                                <strong>3) 히스토리 섹션 / History Section</strong>
                                             </li>
                                         </ul>
                                         <p>공공데이터 포털에서 제공하는 지진 발생 현황 API를 활용하여 한반도 주변에서 발생한 지진 정보를 보여줍니다. 현재 시각을 기준으로 24시간 내에 발생한 지진 데이터를 시간, 위치, 국내에 끼칠 영향 및 피해 정도로 나누어 알 수 있습니다.                                   
-                                        </p>
+                                            <br/>
+                                             It shows earthquake information in the vicinity of the Korean Peninsula by using the earthquake occurrence status API provided by the public data portal. Earthquake data that occurred within 24 hours of the current time can be divided into time, location, and damage effect in Korea.</p>
                                     </div>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>4) 대피 가이드 섹션</strong>
+                                            <strong>4) 대피 가이드 섹션 / Evacuation Guide Section</strong>
                                         </li>
                                     </ul>
                                     <div>
                                         <p> 행정안전부에서 제공하는 지진 국민 행동요령 소책자를 기반으로 만들었으며, 지진 대비, 연령, 장소, 상황별 대피 요령을 세분화 하여 지진 대처 가이드를 제공합니다.<br/>
 
-                                            자료 출처: https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do;jsessionid=QupFzl4vWL0XyfbFSyOpTVyJ.node50?bbsId=BBSMSTR_000000000015&nttId=83847                             
+                                           
+                                            <br/>
+                                            It was created based on the earthquake evacuation instruction booklet the Ministry of Public Administration and Security provided. It provides earthquake response guides by subdividing evacuation guidelines by earthquake preparedness, age, location, and situation. 
+                                            <br/>
+                                            <br/>
+                                            자료 출처: https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do;jsessionid=QupFzl4vWL0XyfbFSyOpTVyJ.node50?bbsId=BBSMSTR_000000000015&nttId=83847                           
                                         </p>
                                     </div>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
